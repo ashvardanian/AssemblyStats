@@ -1,0 +1,13 @@
+# Analyzing binaries
+capstone
+
+# Organizing and exporting results
+pandas
+tabulate
+
+# Visualizing stats
+sklearn
+pyldavis
+
+# Collecting remote packages
+conan
