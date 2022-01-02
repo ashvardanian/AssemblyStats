@@ -2,7 +2,7 @@
 
 PyAssemblyStats is Python project, that analyzes the binaries found in the default system paths. The aim is to understand, how often do our favorite tools use SIMD instructios, that make up a huge part of modern CPUs. The results are astonishing and show, that often less than 1% of generated lines even reference vector registers.
 
-The full report is available in [this article in the Unum blog](https://unum.am/post/2021-11-21-simd-popularity).
+The full report is available in [this article in the Unum blog](https://unum.cloud/post/2021-11-21-simd-popularity).
 
 ## Usage
 
