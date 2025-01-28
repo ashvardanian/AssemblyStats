@@ -4,7 +4,9 @@ import numpy as np
 from specs import BinarySpecs
 
 
-def doc_term_frequency_matrix(specs: Iterable[BinarySpecs]) -> Tuple[List[str], List[str], np.array]:
+def doc_term_frequency_matrix(
+    specs: Iterable[BinarySpecs],
+) -> Tuple[List[str], List[str], np.array]:
 
     # Prepare the document names
     unique_docs = [s.path for s in specs]

@@ -2,17 +2,18 @@
 # -*- coding: utf-8 -*-
 
 """
-    Uses the undocumented Conans Python interface to collect binaries from artifactory.
-    https://github.com/conan-io/conan/issues/6315#issuecomment-572679136
-    https://github.com/conan-io/docs/issues/44#issuecomment-510467609
-    https://www.jfrog.com/confluence/display/BT/Conan+Repositories
-    https://conan.io/center/
+Uses the undocumented Conan's Python interface to collect binaries from artifactory.
+https://github.com/conan-io/conan/issues/6315#issuecomment-572679136
+https://github.com/conan-io/docs/issues/44#issuecomment-510467609
+https://www.jfrog.com/confluence/display/BT/Conan+Repositories
+https://conan.io/center/
 """
+
 import conans
 from conans.client.conan_api import Conan
 from conans.model.ref import ConanFileReference
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Specify the packages with following convention:
     # "my-pkg/0.0.1@my-usr/release",
     # You can search for full name via:
@@ -24,6 +25,6 @@ if __name__ == '__main__':
         # ref.user_io = {'out': None}
         Conan.install_reference(
             ref,
-            install_folder='tmp',
+            install_folder="tmp",
             # generators=['deploy'],
         )

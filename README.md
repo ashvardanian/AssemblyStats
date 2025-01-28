@@ -1,15 +1,15 @@
-# PyAssemblyStats
+# AssemblyStats
 
-PyAssemblyStats is Python project, that analyzes the binaries found in the default system paths.
-The aim is to understand, how often do our favorite tools use SIMD instructios, that make up a huge part of modern CPUs.
+AssemblyStats is Python project, that analyzes the binaries found in the default system paths.
+The aim is to understand, how often do our favorite tools use SIMD instructions, that make up a huge part of modern CPUs.
 The results are astonishing and show, that often less than 1% of generated lines even reference vector registers.
 
 The full report is available in [this article in the "Less Slow" blog](https://ashvardanian.com/posts/simd-popularity/).
 
 ## Usage
 
-- [`main.py`](main.py) generates the `main.json` with stats about differnt binaries.
-- [`topic_modeling.ipynb`](topic_modeling.ipynb) shows, how the clusters of SIMD instruction can be recognized using Latend Dirichlet Allocation.
+- [`main.py`](main.py) generates the `main.json` with stats about different binaries.
+- [`topic_modeling.ipynb`](topic_modeling.ipynb) shows, how the clusters of SIMD instruction can be recognized using Latent Dirichlet Allocation.
 
 ![Clusters](/assets/topic_modeling.png)
 

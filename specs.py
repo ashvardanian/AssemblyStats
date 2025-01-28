@@ -1,6 +1,5 @@
 import os
 import json
-import pickle
 import dataclasses
 from dataclasses import dataclass, field
 from typing import Dict, List, Tuple
@@ -8,7 +7,7 @@ from typing import Dict, List, Tuple
 
 @dataclass
 class InstructionSpecs:
-    mnemonic: str = ''
+    mnemonic: str = ""
     register_size: int = 0
 
     @property
@@ -17,7 +16,7 @@ class InstructionSpecs:
 
     @property
     def name(self) -> str:
-        return f'{self.register_size:03d}b-{self.code}'
+        return f"{self.register_size:03d}b-{self.code}"
 
 
 @dataclass
@@ -34,7 +33,7 @@ class BinarySpecs:
         return n
 
     @property
-    def simd_instrucitons(self) -> int:
+    def simd_instructions(self) -> int:
         n = 0
         for k, v in self.size_frequencies.items():
             if int(k) > 64:
@@ -58,11 +57,11 @@ class EnhancedJSONEncoder(json.JSONEncoder):
         return super().default(o)
 
 
-def restore_state(path: str = 'main.json') -> Specs:
+def restore_state(path: str = "main.json") -> Specs:
     if not os.path.exists(path):
         return dict()
 
-    s = open(path, 'r').read()
+    s = open(path, "r").read()
     dicts = json.loads(s)
     specs = dict()
     for k, d in dicts.items():
@@ -70,11 +69,11 @@ def restore_state(path: str = 'main.json') -> Specs:
     return specs
 
 
-def save_state(obj: Specs, path: str = 'main.json'):
+def save_state(obj: Specs, path: str = "main.json"):
     s = json.dumps(obj, cls=EnhancedJSONEncoder)
-    with open(path, 'w') as f:
+    with open(path, "w") as f:
         f.write(s)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     restore_state()

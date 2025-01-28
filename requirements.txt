@@ -1,13 +1,13 @@
 # Analyzing binaries
-capstone
+capstone # Disassembly
 
 # Organizing and exporting results
-pandas
-tabulate
+pandas # Manipulating tables
+tabulate # Logging tables to console
 
 # Visualizing stats
-sklearn
-pyldavis
+sklearn # Machine Learning
+pyldavis # Latent Dirichlet Allocation
 
 # Collecting remote packages
 conan
