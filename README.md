@@ -1,6 +1,6 @@
-# AssemblyStats
+# VectorDossier
 
-AssemblyStats is a Python micro-project that _statically_ analyzes _vectorization_ depth of programs and libraries.
+VectorDossier is a Python micro-project that _statically_ analyzes _vectorization_ depth of programs and libraries.
 
 Most CPUs produced in the last twenty years have SIMD (Single Instruction, Multiple Data) instructions, which allow the same operation to be performed on multiple data elements simultaneously within a single core.
 Yet, most compilers can't magically map complex high-level abstractions to SIMD instructions, so the programmer has to do it manually.
