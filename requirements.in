@@ -1,10 +1,11 @@
 # Analyzing binaries
 capstone # Disassembly
+tqdm # REporting progress of long tasks
 
 # Organizing and exporting results
 pandas # Manipulating tables
 tabulate # Logging tables to console
 
 # Visualizing stats
-sklearn # Machine Learning
+scikit-learn # Machine Learning
 pyldavis # Latent Dirichlet Allocation
