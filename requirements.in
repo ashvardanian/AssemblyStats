@@ -1,6 +1,6 @@
 # Analyzing binaries
 capstone # Disassembly
-tqdm # REporting progress of long tasks
+tqdm # Reporting progress of long tasks
 
 # Organizing and exporting results
 pandas # Manipulating tables

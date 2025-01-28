@@ -27,3 +27,28 @@ Let alone use them effectively.
 - `main.py` - provides a script capable of dissecting either a specific binary or aggregating statistics across many directories.
 
 ![Clusters](/assets/topic_modeling.png)
+
+## Running Locally
+
+```py
+git clone https://github.com/ashvardanian/less_slow.py.git # Clone the repository
+cd less_slow.py                                            # Change the directory
+pip install -r requirements.txt                            # Install the dependencies
+main.py --help                                             # Check the available options
+```
+
+Alternatively, run the benchmarks in a controlled environment using [`uv`](https://docs.astral.sh/uv/getting-started/installation/).
+
+```sh
+uv run --python="3.12" --no-sync \
+    --with-requirements requirements.in \
+    main.py --help
+```
+
+For `uv`, the `--no-sync` flag prevents `uv` from creating a `uv.lock` file or modifying an existing `.venv` folder.
+To extend the current list of dependencies, update the `requirements.in` file and run `uv sync` to update the environment.
+
+```sh
+uv pip compile requirements.in --universal --output-file requirements.txt
+uv pip sync requirements.txt
+```
