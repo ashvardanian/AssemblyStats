@@ -1,7 +1,46 @@
 [project]
-name = "VectorDossier"
+name = "vector-dossier"
 version = "0.1.0"
 requires-python = ">=3.9,<3.13"
+description = "¶ code vectorization static analyses tool for x86/arm binaries"
+readme = "README.md"
+license = "Apache-2.0"
+maintainers = [
+    { name = "Ash Vardanian", email = "1983160+ashvardanian@users.noreply.github.com" },
+]
+
+# Make the project searchable on PyPI
+keywords = [
+    "simd",
+    "vectorization",
+    "binary",
+    "disassembly",
+    "static analysis",
+    "jit",
+    "compiler",
+    "optimization",
+]
+
+# Full list of classifiers: https://pypi.org/classifiers/
+classifiers = [
+    # How mature is this project? Common values are
+    #   3 - Alpha
+    #   4 - Beta
+    #   5 - Production/Stable
+    "Development Status :: 3 - Alpha",
+
+    # Indicate who your project is intended for
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+
+    # Specify the Python versions you support here.
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
 
 dependencies = [
     # Analyzing binaries
@@ -16,3 +55,17 @@ dependencies = [
     "scikit-learn", # Machine Learning
     "pyldavis",     # Latent Dirichlet Allocation
 ]
+
+[project.urls]
+Homepage = "https://ashvardanian.com/posts/simd-popularity/"
+Documentation = "https://github.com/ashvardanian/vector-dossier"
+Repository = "https://github.com/ashvardanian/vector-dossier.git"
+Issues = "https://github.com/ashvardanian/vector-dossier/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+vdos = "main:cli_entry"
+vector-dossier = "main:cli_entry"

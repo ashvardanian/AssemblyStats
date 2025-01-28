@@ -3,7 +3,9 @@
         "Haswell",
         "libsqlite",
         "Neoverse",
+        "scikit",
         "Skylake",
+        "tqdm",
         "uops",
         "Vardanian",
         "vdos"
