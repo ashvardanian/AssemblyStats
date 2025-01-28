@@ -17,6 +17,4 @@ The full report is available in [this article in the "Less Slow" blog](https://a
 
 - [ ] Download top PyPi packages for numeric computing.
 - [ ] Download [top 100 most popular C++ projects from GitHub](https://github.com/search?l=&o=desc&q=stars%3A%3E1000+language%3AC%2B%2B&s=stars&type=Repositories), compile them with SIMD flags and evaluate.
-- [ ] Gather precompiled packages from Conan and Conda.
 - [ ] Implement `specs_arm.py` for ARM assembly.
-- [ ] Rewrite in C++ for speed.
