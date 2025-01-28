@@ -1,4 +1,6 @@
+# Python temporary files:
 __pycache__
+# Local virtual environment:
+/.venv
+# macOS temporary files:
 .DS_Store
-*.pickle
-*.json
