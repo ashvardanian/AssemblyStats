@@ -1,0 +1,18 @@
+[project]
+name = "VectorDossier"
+version = "0.1.0"
+requires-python = ">=3.9,<3.13"
+
+dependencies = [
+    # Analyzing binaries
+    "capstone", # Disassembly
+    "tqdm",     # Reporting progress of long tasks
+
+    # Organizing and exporting results
+    "pandas",   # Manipulating tables
+    "tabulate", # Logging tables to console
+
+    # Visualizing stats
+    "scikit-learn", # Machine Learning
+    "pyldavis",     # Latent Dirichlet Allocation
+]
