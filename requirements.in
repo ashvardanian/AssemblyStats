@@ -8,6 +8,3 @@ tabulate # Logging tables to console
 # Visualizing stats
 sklearn # Machine Learning
 pyldavis # Latent Dirichlet Allocation
-
-# Collecting remote packages
-conan
